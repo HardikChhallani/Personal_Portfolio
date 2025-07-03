@@ -4,32 +4,22 @@ import { Code, Brain, Zap, Smartphone, Globe, Database } from 'lucide-react';
 const About = () => {
   const interests = [
     {
-      icon: <Brain size={28} />,
+      icon: <Brain size={18} />,
       title: "Artificial Intelligence & ML",
       description: "Exploring cutting-edge AI technologies, machine learning algorithms, and their practical applications in solving real-world problems"
     },
     {
-      icon: <Smartphone size={28} />,
-      title: "Mobile Development",
-      description: "Building beautiful, performant cross-platform applications with Flutter and native technologies"
-    },
-    {
-      icon: <Globe size={28} />,
-      title: "Full Stack Development",
+      icon: <Globe size={18} />,
+      title: "Web Development",
       description: "Creating end-to-end web solutions with modern frameworks, APIs, and cloud technologies"
     },
     {
-      icon: <Database size={28} />,
+      icon: <Database size={18} />,
       title: "Data Engineering",
       description: "Designing efficient data pipelines, working with databases, and implementing scalable backend architectures"
     },
     {
-      icon: <Zap size={28} />,
-      title: "Automation & DevOps",
-      description: "Streamlining workflows through automation, CI/CD pipelines, and infrastructure as code"
-    },
-    {
-      icon: <Code size={28} />,
+      icon: <Code size={18} />,
       title: "Open Source",
       description: "Contributing to the developer community through open-source projects and knowledge sharing"
     }
@@ -60,23 +50,11 @@ const About = () => {
             <div className="prose prose-lg prose-gray max-w-none">
               <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/30">
                 <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                  I'm a passionate full-stack developer and AI enthusiast with a deep love for creating 
-                  innovative solutions that bridge the gap between complex technology and user-friendly experiences. 
-                  My journey in software development has been driven by curiosity and a constant desire to learn and grow.
+                Hey there! I’m Hardik Chhallani, a curious technologist with a passion for crafting intelligent, impactful, and scalable solutions. My journey began with a fascination for how things work and evolved into a deep dive into Artificial Intelligence, Machine Learning, and Web Development.
                 </p>
                 
                 <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                  With expertise spanning mobile development, web technologies, and artificial intelligence, 
-                  I enjoy tackling complex problems and turning ambitious ideas into reality. Whether it's 
-                  building sleek Flutter applications, developing intelligent systems, or architecting 
-                  scalable backend solutions, I thrive on the challenge of creating something meaningful.
-                </p>
-                
-                <p className="text-gray-300 leading-relaxed text-lg">
-                  When I'm not coding, you'll find me exploring the latest tech trends, contributing to 
-                  open-source projects, sharing knowledge with the developer community, or experimenting 
-                  with new frameworks and tools. I believe in continuous learning and staying at the 
-                  forefront of technological innovation.
+                  Currently, I’m a Data Science Intern at Eka.Care, where I work on extracting real-world value from healthcare data and integrating cutting-edge AI into meaningful user experiences. Prior to this, I interned at the Aeronautical Development Agency (ADA), where I had the opportunity to work on data systems related to fighter jet technologies—yes, it was as cool as it sounds! 
                 </p>
               </div>
             </div>
@@ -84,11 +62,11 @@ const About = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-purple-600/20 to-blue-600/20 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20">
-                <div className="text-3xl font-bold text-white mb-2">3+</div>
-                <div className="text-gray-400">Years Experience</div>
+                <div className="text-3xl font-bold text-white mb-2">6+</div>
+                <div className="text-gray-400">Months Experience</div>
               </div>
               <div className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20">
-                <div className="text-3xl font-bold text-white mb-2">50+</div>
+                <div className="text-3xl font-bold text-white mb-2">15+</div>
                 <div className="text-gray-400">Projects Completed</div>
               </div>
             </div>

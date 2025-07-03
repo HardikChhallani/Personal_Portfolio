@@ -1,84 +1,83 @@
 import React, { useState } from 'react';
-import { Github, ExternalLink, Star, GitFork } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
 
-  const projects = [
-    {
-      title: "AI-Powered Code Review Assistant",
-      description: "Intelligent code analysis tool that provides automated code reviews, suggests improvements, and identifies potential security vulnerabilities using advanced AI algorithms.",
-      image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Python", "OpenAI API", "FastAPI", "Docker", "PostgreSQL"],
-      github: "https://github.com/HardikChhallani",
-      demo: "#",
-      category: "AI",
-      stars: 45,
-      forks: 12,
-      featured: true
-    },
-    {
-      title: "Flutter E-Commerce Platform",
-      description: "Complete mobile e-commerce solution with real-time inventory management, secure payment processing, user analytics, and admin dashboard.",
-      image: "https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Flutter", "Firebase", "Stripe API", "Dart", "Cloud Functions"],
-      github: "https://github.com/HardikChhallani",
-      demo: "#",
-      category: "Mobile",
-      stars: 78,
-      forks: 23,
-      featured: true
-    },
-    {
-      title: "Smart Automation Dashboard",
-      description: "Comprehensive IoT dashboard for monitoring and controlling smart home devices with real-time analytics, scheduling, and voice control integration.",
-      image: "https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io", "MQTT"],
-      github: "https://github.com/HardikChhallani",
-      demo: "#",
-      category: "Web",
-      stars: 34,
-      forks: 8,
-      featured: false
-    },
-    {
-      title: "Machine Learning Model Deployment Platform",
-      description: "Cloud-native platform for deploying, monitoring, and scaling machine learning models with automated CI/CD pipelines and performance tracking.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Python", "Docker", "Kubernetes", "MLflow", "AWS"],
-      github: "https://github.com/HardikChhallani",
-      demo: "#",
-      category: "AI",
-      stars: 67,
-      forks: 19,
-      featured: true
-    },
-    {
-      title: "Real-time Collaboration Tool",
-      description: "Modern team collaboration platform with real-time document editing, video conferencing, task management, and integrated development tools.",
-      image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["React", "WebRTC", "Socket.io", "Redis", "PostgreSQL"],
-      github: "https://github.com/HardikChhallani",
-      demo: "#",
-      category: "Web",
-      stars: 89,
-      forks: 31,
-      featured: false
-    },
-    {
-      title: "Blockchain-based Supply Chain Tracker",
-      description: "Decentralized application for tracking products through supply chain using blockchain technology, ensuring transparency and authenticity.",
-      image: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800",
-      tech: ["Solidity", "Web3.js", "React", "IPFS", "Ethereum"],
-      github: "https://github.com/HardikChhallani",
-      demo: "#",
-      category: "Blockchain",
-      stars: 56,
-      forks: 15,
-      featured: false
-    }
-  ];
-
+const projects = [
+  {
+    title: "Dravya",
+    description: "A Streamlit-based application powered by Ekacare MCP tools for finding medicine information, alternatives, and generic options tailored for the Indian healthcare context.",
+    tech: ["Python", "Streamlit", "Ekacare MCP", "LLM", "AI Agents"],
+    github: "https://github.com/HardikChhallani/Dravya",
+    category: "Healthcare",
+    featured: true
+  },
+  {
+    title: "LLMArche: LLM from Scratch for Law Dataset",
+    description: "A large language model (LLM) built from scratch, fine-tuned on legal datasets to provide domain-specific NLP capabilities for law-related tasks.",
+    tech: ["Python", "NLP", "Transformers", "Law Dataset", "Multi head Attention"],
+    github: "https://github.com/HardikChhallani/LLMArche-LLM-from-Scratch",
+    category: "AI",
+    featured: true
+  },
+  {
+    title: "Neural Network from Scratch (Python)",
+    description: "A complete neural network implementation from scratch in Python, demonstrating core deep learning concepts without using high-level libraries.",
+    tech: ["Python", "NumPy", "Deep Learning", "Tensorflow"],
+    github: "https://github.com/HardikChhallani/Neural-Network-from-scratch-Python",
+    category: "AI",
+    featured: true
+  },
+  {
+    title: "Doctor FastAPI Endpoint",
+    description: "A FastAPI-based backend for searching, evaluating, and booking doctors, featuring RESTful endpoints and robust deployment.",
+    tech: ["Python", "FastAPI", "REST API"],
+    github: "https://github.com/HardikChhallani/Doctor_fastapi_deploy",
+    category: "Healthcare",
+    featured: false
+  },
+  {
+    title: "MCP Transport Protocols with Auth",
+    description: "Implemented multiple map transport protocols with authentication for secure and efficient data transfer in healthcare applications.",
+    tech: ["Python","MCP"],
+    github: "https://github.com/HardikChhallani/MCP-Transport-Protocols-with-Auth",
+    category: "Healthcare",
+    featured: false
+  },
+  {
+    title: "AuraDetect – Real-time Object Detection Hub",
+    description: "A real-time object detection platform leveraging deep learning for fast and accurate detection across multiple video streams.",
+    tech: ["Python", "Deep Learning", "Object Detection", "Streamlit", "YOLO"],
+    github: "https://github.com/HardikChhallani/Aura-Detect",
+    category: "AI",
+    featured: false
+  },
+  {
+    title: "Price Prediction Pipeline Demo",
+    description: "A machine learning pipeline for price prediction, featuring data preprocessing, model training, and evaluation with reproducible results.",
+    tech: ["Python", "ML Pipeline", "Regression", "scikit-learn"],
+    github: "https://github.com/HardikChhallani/Price_Prediction_Pipeline_Demo",
+    category: "ML",
+    featured: false
+  },
+  {
+    title: "VIT Library Website Web Scraping",
+    description: "A web scraping tool to extract and analyze data from the VIT library website, automating information retrieval for research and reporting.",
+    tech: ["Python", "Web Scraping", "BeautifulSoup", "Requests"],
+    github: "https://github.com/HardikChhallani/VIT-library-website-web-scrapping",
+    category: "Web",
+    featured: false
+  },
+  {
+    title: "MailSender Webapp",
+    description: "A user-friendly web application for sending bulk emails with attachments, supporting multiple recipients and customizable templates.",
+    tech: ["Python", "Flask", "SMTP", "Webapp"],
+    github: "https://github.com/HardikChhallani/MailSender-webapp",
+    category: "Web",
+    featured: false
+  }
+];
   const categories = ['All', ...Array.from(new Set(projects.map(p => p.category)))];
   
   const filteredProjects = selectedFilter === 'All' 
@@ -142,65 +141,30 @@ const Projects = () => {
             >
               {/* Featured Badge */}
               {project.featured && (
-                <div className="absolute top-4 right-4 z-20 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                  Featured
-                </div>
+                <div></div>
               )}
 
-              {/* Enhanced Project Image */}
-              <div className="relative overflow-hidden h-48">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-                
-                {/* Overlay Actions */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <div className="flex gap-4">
+              {/* Enhanced Project Content */}
+              <div className="p-6 space-y-4 flex flex-col h-full justify-between">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors duration-300 leading-tight">
+                      {project.title}
+                    </h3>
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-gray-900/80 backdrop-blur-sm rounded-full text-white hover:bg-purple-600 transition-all duration-300 transform hover:scale-110"
+                      className="ml-1 p-1 bg-gray-900/80 backdrop-blur-sm rounded-full text-white hover:bg-purple-600 transition-all duration-300 transform hover:scale-110"
+                      title="View on GitHub"
                     >
-                      <Github size={20} />
-                    </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 bg-gray-900/80 backdrop-blur-sm rounded-full text-white hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
-                    >
-                      <ExternalLink size={20} />
+                      <Github size={18} />
                     </a>
                   </div>
                 </div>
-              </div>
-
-              {/* Enhanced Project Content */}
-              <div className="p-6 space-y-4">
-                <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors duration-300 leading-tight">
-                    {project.title}
-                  </h3>
-                  <div className="flex items-center gap-3 text-gray-400 text-sm">
-                    <div className="flex items-center gap-1">
-                      <Star size={14} />
-                      <span>{project.stars}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <GitFork size={14} />
-                      <span>{project.forks}</span>
-                    </div>
-                  </div>
-                </div>
-                
                 <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
                   {project.description}
                 </p>
-
                 {/* Enhanced Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (

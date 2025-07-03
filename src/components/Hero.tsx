@@ -46,11 +46,11 @@ const Hero = () => {
             
             <div className="space-y-4">
               <p className="text-2xl sm:text-3xl text-gray-300 font-light tracking-wide">
-                Full Stack Developer & AI Enthusiast
+                Enthusiast | Eager
               </p>
               
               <p className="text-lg sm:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-                "Building innovative solutions with Flutter, Python, and cutting-edge technologies. 
+                "Building innovative solutions with Python, and cutting-edge technologies. 
                 Passionate about AI, automation, and creating impactful digital experiences."
               </p>
             </div>
@@ -58,11 +58,13 @@ const Hero = () => {
 
           {/* Enhanced CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-            <button className="group relative bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-3 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <Download size={22} />
-              <span className="relative z-10">Download Resume</span>
-            </button>
+            <a href="/resources/Resume.pdf" download>
+              <button className="group relative bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-3 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                <Download size={22} />
+                <span className="relative z-10">Download Resume</span>
+              </button>
+            </a>
             
             {/* Enhanced Social Links */}
             <div className="flex gap-4">
