@@ -6,7 +6,7 @@ const Projects = () => {
 
 const projects = [
   {
-    title: "Dravya",
+    title: "Dravya - Healthcare AI Agent",
     description: "A Streamlit-based application powered by Ekacare MCP tools for finding medicine information, alternatives, and generic options tailored for the Indian healthcare context.",
     tech: ["Python", "Streamlit", "Ekacare MCP", "LLM", "AI Agents"],
     github: "https://github.com/HardikChhallani/Dravya",

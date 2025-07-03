@@ -6,6 +6,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '', // Added missing subject field
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -24,27 +25,27 @@ const Contact = () => {
     setSubmitStatus('idle');
 
     try {
-      // EmailJS configuration
-      const serviceId = 'service_your_service_id'; // Replace with your EmailJS service ID
-      const templateId = 'template_your_template_id'; // Replace with your EmailJS template ID
-      const publicKey = 'your_public_key'; // Replace with your EmailJS public key
+      // EmailJS configuration - ADD YOUR CREDENTIALS HERE
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,  
+        email: formData.email,
+        subject: formData.subject,
         message: formData.message,
         to_email: 'hardikchhallani04@gmail.com'
       };
 
-      // For demo purposes, we'll simulate the email sending
-      // In production, uncomment the line below and configure EmailJS properly
-      // await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      // Uncomment the line below when you have your EmailJS credentials
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Remove this simulation when using real EmailJS
+      // await new Promise(resolve => setTimeout(resolve, 2000));
       
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', subject: '', message: '' });
       
       // Hide success message after 5 seconds
       setTimeout(() => setSubmitStatus('idle'), 5000);
@@ -146,6 +147,22 @@ const Contact = () => {
               </div>
 
               <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-3">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-6 py-4 bg-gray-700/50 border border-gray-600/50 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300"
+                  placeholder="What's this about?"
+                />
+              </div>
+
+              <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-3">
                   Message
                 </label>
@@ -208,12 +225,6 @@ const Contact = () => {
               <h3 className="text-3xl font-semibold text-white mb-8">
                 Let's Connect
               </h3>
-              <p className="text-gray-400 leading-relaxed text-lg mb-10">
-                I'm always excited to discuss new opportunities, innovative projects, 
-                or just have a conversation about technology and development. Whether you're 
-                looking for a collaborator, have a question, or want to share an idea, 
-                feel free to reach out through any of the channels below.
-              </p>
             </div>
 
             <div className="space-y-6">

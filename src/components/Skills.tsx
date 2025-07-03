@@ -6,19 +6,24 @@ const Skills = () => {
       title: "Programming Languages",
       skills: [
         { name: "Python", icon: "🐍" },
-        { name: "Dart", icon: "🎯" },
         { name: "JavaScript", icon: "🟨" },
-        { name: "TypeScript", icon: "🔷" },
         { name: "Java", icon: "☕" },
         { name: "C++", icon: "⚡" }
       ]
     },
     {
+      title: "AI & Machine Learning",
+      skills: [
+        { name: "MCP", icon: "🤖" },
+        { name: "TensorFlow", icon: "🧠" },
+        { name: "PyTorch", icon: "🔥" },
+        { name: "Scikit-learn", icon: "📈" }
+      ]
+    },
+    {
       title: "Frontend Development",
       skills: [
-        { name: "Flutter", icon: "💙" },
         { name: "React", icon: "⚛️" },
-        { name: "Next.js", icon: "▲" },
         { name: "HTML/CSS", icon: "🌐" },
         { name: "Tailwind CSS", icon: "🎨" },
         { name: "Material-UI", icon: "🎭" }
@@ -27,44 +32,27 @@ const Skills = () => {
     {
       title: "Backend & APIs",
       skills: [
-        { name: "Node.js", icon: "🟢" },
         { name: "FastAPI", icon: "⚡" },
         { name: "Flask", icon: "🌶️" },
-        { name: "Express.js", icon: "🚀" },
-        { name: "REST APIs", icon: "🔗" },
-        { name: "GraphQL", icon: "📊" }
+        { name: "Django", icon: "🚀" },
+        { name: "REST APIs", icon: "🔗" }
       ]
     },
     {
       title: "Databases & Cloud",
       skills: [
-        { name: "Firebase", icon: "🔥" },
         { name: "MongoDB", icon: "🍃" },
-        { name: "PostgreSQL", icon: "🐘" },
+        { name: "SQL", icon: "🐘" },
         { name: "AWS", icon: "☁️" },
-        { name: "Google Cloud", icon: "🌤️" },
-        { name: "Docker", icon: "🐳" }
+        { name: "Google Cloud", icon: "🌤️" }
       ]
     },
     {
-      title: "AI & Machine Learning",
-      skills: [
-        { name: "OpenAI API", icon: "🤖" },
-        { name: "TensorFlow", icon: "🧠" },
-        { name: "PyTorch", icon: "🔥" },
-        { name: "Scikit-learn", icon: "📈" },
-        { name: "Pandas", icon: "🐼" },
-        { name: "NumPy", icon: "🔢" }
-      ]
-    },
-    {
-      title: "Tools & DevOps",
+      title: "Tools",
       skills: [
         { name: "Git", icon: "📝" },
-        { name: "GitHub Actions", icon: "⚙️" },
+        { name: "GitHub", icon: "⚙️" },
         { name: "Vercel", icon: "▲" },
-        { name: "Netlify", icon: "🌐" },
-        { name: "VS Code", icon: "💻" },
         { name: "Postman", icon: "📮" }
       ]
     }
